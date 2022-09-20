@@ -1,46 +1,50 @@
 
-This directory is intended for project specific (private) libraries.
-PlatformIO will compile them to static libraries and link into executable file.
+# PCB ESP32 Panel P5 dari online shop
+## Pin maping
+Basic test, menggunakan Board ESP32 dan Panel P5 64x32 1panel
+### IC 2 SEBELAH KANAN
+| IC PIN 74HC245  | OUTPUT TO ESP32 |
+| --------------- | --------------- |
+| 1  | VCC    |
+| 2  | D19   |
+| 3  | D18   |
+| 4  | D5   |
+| 5  | TX2   |
+| 6  | RX2   |
+| 7  | D4   |
+| 8  | D2   |
+| 9  | D15   |
+| 10  | GND   |
+| 11 | OE   |
+| 12 | CLK   |
+| 13 | C   |
+| 14 | A   |
+| 15 | B2   |
+| 16 | R2   |
+| 17 | B1   |
+| 18 | R1   |
+| 19 | GND   |
+| 20 | VCC   |
 
-The source code of each library should be placed in a an own separate directory
-("lib/your_library_name/[here are source files]").
 
-For example, see a structure of the following two libraries `Foo` and `Bar`:
-
-|--lib
-|  |
-|  |--Bar
-|  |  |--docs
-|  |  |--examples
-|  |  |--src
-|  |     |- Bar.c
-|  |     |- Bar.h
-|  |  |- library.json (optional, custom build options, etc) https://docs.platformio.org/page/librarymanager/config.html
-|  |
-|  |--Foo
-|  |  |- Foo.c
-|  |  |- Foo.h
-|  |
-|  |- README --> THIS FILE
-|
-|- platformio.ini
-|--src
-   |- main.c
-
-and a contents of `src/main.c`:
-```
-#include <Foo.h>
-#include <Bar.h>
-
-int main (void)
-{
-  ...
-}
-
-```
-
-PlatformIO Library Dependency Finder will find automatically dependent
-libraries scanning project source files.
-
-More information about PlatformIO Library Dependency Finder
-- https://docs.platformio.org/page/librarymanager/ldf.html
+### IC 2 SEBELAH KIRI
+| IC PIN 74HC245  | OUTPUT TO ESP32 |
+| --------------- | --------------- |
+|1  |VCC|
+|2  |D23|
+|3  |D33|
+|4  |D25|
+|5  |D26|
+|6  |D27|
+|7  |D14|
+|8  |D12|
+|9  |D13|
+|10 | GN|D
+|18 | LAT PORT KIRI
+|17 | B1
+|16 | R2
+|15 | LAT PORT KANAN
+|14 | D
+|13 | B
+|12 | G2 PORT KIRI
+|11 | G1 PORT KIRI KANAN
